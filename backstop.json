@@ -1,0 +1,50 @@
+{
+  "id": "wayback_example",
+  "viewports": [
+   {
+      "name": "iphone_6",
+      "width": 375,
+      "height": 667
+    },
+        {
+      "name": "iphone_6_plus",
+      "width": 414,
+      "height": 736
+    },
+    {
+      "name": "ipad_3_v",
+      "width": 768,
+      "height": 1024
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "BackstopJS Homepage",
+      "url": "http://wayback.archive.org/web/20090630233758/http://www.google.com/",
+      "referenceUrl": "http://wayback.archive.org/web/20080208084735/http://www.google.com/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "center > form",
+        "center > img",
+        "#gbar"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1,
+      "onBeforeScript": "onBefore.js",
+      "onReadyScript": "closeWaybackMenu.js"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "casper_scripts": "backstop_data/casper_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "casperFlags": [],
+  "engine": "phantomjs",
+  "report": ["browser"],
+  "debug": false
+}

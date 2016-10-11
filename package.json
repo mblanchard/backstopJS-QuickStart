@@ -1,0 +1,24 @@
+{
+  "name": "backstopjs-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "genConfig": "node ./node_modules/backstopjs/cli/index.js genConfig",
+    "reference": "node ./node_modules/backstopjs/cli/index.js reference",
+    "test": "node ./node_modules/backstopjs/cli/index.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mblanchard/backstopJS-QuickStart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mblanchard/backstopJS-QuickStart/issues"
+  },
+  "homepage": "https://github.com/mblanchard/backstopJS-QuickStart#readme",
+  "devDependencies": {
+    "backstopjs": "^2.0.4"
+  }
+}
