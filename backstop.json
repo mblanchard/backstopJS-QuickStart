@@ -19,7 +19,7 @@
   ],
   "scenarios": [
     {
-      "label": "BackstopJS Homepage",
+      "label": "google.com 2008 vs 2009",
       "url": "http://wayback.archive.org/web/20090630233758/http://www.google.com/",
       "referenceUrl": "http://wayback.archive.org/web/20080208084735/http://www.google.com/",
       "hideSelectors": [],
@@ -32,8 +32,22 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.1,
-      "onBeforeScript": "onBefore.js",
+      "onBeforeScript": null,
       "onReadyScript": "closeWaybackMenu.js"
+    },
+    {
+      "label": "google.com",
+      "url": "https://www.google.com",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "body"
+      ],
+      "readyEvent": null,
+      "delay": 3000,
+      "misMatchThreshold" : 0.1,
+      "onBeforeScript": "setUserAgent.js",
+      "onReadyScript": null
     }
   ],
   "paths": {
