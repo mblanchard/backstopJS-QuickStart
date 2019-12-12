@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/mblanchard/backstopJS-QuickStart#readme",
   "devDependencies": {
-    "backstopjs": "^2.0.4"
+    "backstopjs": "^4.4.2"
   }
 }
